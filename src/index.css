@@ -51,3 +51,14 @@ html, body {
   box-shadow: 0 0 15px #ec4899; /* Matches hover:shadow */
   transition: all 0.3s ease-in-out;
 }
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
