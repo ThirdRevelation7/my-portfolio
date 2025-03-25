@@ -29,7 +29,18 @@ export const About = () => {
                         About Me
                     </h2>
 
-                    <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all duration-300">
+                    <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all duration-300 hover:shadow-[0_0_15px_theme('color.pink.500')]"
+                        onTouchStart={(e) =>
+                            e.currentTarget.classList.add(
+                                "shadow-[0_0_15px_theme('color.pink.500')]"
+                            )
+                        }
+                        onTouchEnd={(e) =>
+                            e.currentTarget.classList.remove(
+                                "shadow-[0_0_15px_theme('color.pink.500')]"
+                            )
+                        }
+                    >
                         <p className="text-gray-400 mb-6 ">
                             What I may lack in work experience, I will more than make up for with drive, hard work, and focus. I thrive in team environments and will be extremely grateful for any opportunity to contribute and grow.
                         </p>
