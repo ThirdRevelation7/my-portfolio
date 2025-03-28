@@ -25,14 +25,14 @@ export const About = () => {
         >
             <RevealOnScroll>
                 <div className="text-center max-w-3xl mx-auto px-4">
-                    <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-cyan-200 to-pink-500 bg-clip-text text-transparent inline-block">
+                    <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-cyan-200 to-pink-500 bg-clip-text text-transparent inline-block hover:animate-pulse">
                         About Me
                     </h2>
 
-                    <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all duration-300 hover:shadow-[0_0_15px_theme('color.pink.500')]"
+                    <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all duration-300 hover:shadow-[0px_0px_5px_2px_theme('color.pink.200'),0px_0px_15px_5px_theme('color.pink.500')] ease-in"
                         onTouchStart={(e) => {
                             e.currentTarget.classList.add(
-                                "shadow-[0_0_15px_theme('color.pink.500')]"
+                                "shadow-[0px_0px_5px_2px_theme('color.pink.200'),0px_0px_15px_5px_theme('color.pink.500')]"
                             );
                             e.currentTarget.querySelectorAll(".pink-glow").forEach((span) => {
                                 span.classList.add("touch-hover-pink");
@@ -43,7 +43,7 @@ export const About = () => {
                         }}
                         onTouchEnd={(e) => {
                             e.currentTarget.classList.remove(
-                                "shadow-[0_0_15px_theme('color.pink.500')]"
+                                "shadow-[0px_0px_5px_2px_theme('color.pink.200'),0px_0px_15px_5px_theme('color.pink.500')]"
                             );
                             e.currentTarget.querySelectorAll(".pink-glow").forEach((span) => {
                                 span.classList.remove("touch-hover-pink");
@@ -53,7 +53,7 @@ export const About = () => {
                             });
                         }}
                     >
-                        <p className="text-gray-400 mb-6 ">
+                        <p className="text-gray-400 mb-6">
                             What I may lack in work experience, I will more than make up for with drive, hard work, and focus. I thrive in team environments and will be extremely grateful for any opportunity to contribute and grow.
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

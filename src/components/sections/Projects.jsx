@@ -11,15 +11,15 @@ export const Projects = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div
                             className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-cyan-200/20
-                                hover:shadow-[0_0_15px_theme('color.cyan.200')] transition"
+                                hover:shadow-[0px_0px_5px_2px_theme('color.cyan.100'),0px_0px_15px_5px_theme('color.cyan.500')] transition"
                             onTouchStart={(e) =>
                                 e.currentTarget.classList.add(
-                                    "shadow-[0_0_15px_theme('color.cyan.200')]"
+                                    "shadow-[0px_0px_5px_2px_theme('color.cyan.100'),0px_0px_15px_5px_theme('color.cyan.400')]"
                                 )
                             }
                             onTouchEnd={(e) =>
                                 e.currentTarget.classList.remove(
-                                    "shadow-[0_0_15px_theme('color.cyan.200')]"
+                                    "shadow-[0px_0px_5px_2px_theme('color.cyan.100'),0px_0px_15px_5px_theme('color.cyan.400')]"
                                 )
                             }
                         >
@@ -53,15 +53,15 @@ export const Projects = () => {
                         </div>
                         <div
                             className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-pink-200/20
-                                hover:shadow-[0_0_15px_theme('color.pink.500')] transition"
+                                hover:shadow-[0px_0px_5px_2px_theme('color.pink.200'),0px_0px_15px_5px_theme('color.pink.500')] transition"
                             onTouchStart={(e) =>
                                 e.currentTarget.classList.add(
-                                    "shadow-[0_0_15px_theme('color.pink.500')]"
+                                    "shadow-[0px_0px_5px_2px_theme('color.pink.200'),0px_0px_15px_5px_theme('color.pink.500')]"
                                 )
                             }
                             onTouchEnd={(e) =>
                                 e.currentTarget.classList.remove(
-                                    "shadow-[0_0_15px_theme('color.pink.500')]"
+                                    "shadow-[0px_0px_5px_2px_theme('color.pink.200'),0px_0px_15px_5px_theme('color.pink.500')]"
                                 )
                             }
                         >
@@ -93,15 +93,15 @@ export const Projects = () => {
                         </div>
                         <div
                             className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-cyan-200/20
-                                hover:shadow-[0_0_15px_theme('color.cyan.200')] transition"
+                                hover:shadow-[0px_0px_5px_2px_theme('color.cyan.100'),0px_0px_15px_5px_theme('color.cyan.400')] transition"
                             onTouchStart={(e) =>
                                 e.currentTarget.classList.add(
-                                    "shadow-[0_0_15px_theme('color.cyan.200')]"
+                                    "shadow-[0px_0px_5px_2px_theme('color.cyan.100'),0px_0px_15px_5px_theme('color.cyan.400')]"
                                 )
                             }
                             onTouchEnd={(e) =>
                                 e.currentTarget.classList.remove(
-                                    "shadow-[0_0_15px_theme('color.cyan.200')]"
+                                    "shadow-[0px_0px_5px_2px_theme('color.cyan.100'),0px_0px_15px_5px_theme('color.cyan.400')]"
                                 )
                             }
                         >
@@ -131,15 +131,15 @@ export const Projects = () => {
                         </div>
                         <div
                             className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-pink-200/20
-                                hover:shadow-[0_0_15px_theme('color.pink.500')] transition"
+                                hover:shadow-[0px_0px_5px_2px_theme('color.pink.200'),0px_0px_15px_5px_theme('color.pink.500')] transition"
                             onTouchStart={(e) =>
                                 e.currentTarget.classList.add(
-                                    "shadow-[0_0_15px_theme('color.pink.500')]"
+                                    "shadow-[0px_0px_5px_2px_theme('color.pink.200'),0px_0px_15px_5px_theme('color.pink.500')]"
                                 )
                             }
                             onTouchEnd={(e) =>
                                 e.currentTarget.classList.remove(
-                                    "shadow-[0_0_15px_theme('color.pink.500')]"
+                                    "shadow-[0px_0px_5px_2px_theme('color.pink.200'),0px_0px_15px_5px_theme('color.pink.500')]"
                                 )
                             }
                         >
