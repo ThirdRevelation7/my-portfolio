@@ -21,8 +21,17 @@ export const About = () => {
     return (
         <section
             id="about"
-            className="min-h-screen flex items-center justify-center py-20"
+            className="min-h-screen flex flex-col items-center justify-center relative py-20"
         >
+            <div className="items-center flex-col mb-8 justify-center">
+                <RevealOnScroll>
+                    <img
+                        src="./profile-pic.png" // Replace with your image URL
+                        alt="Profile"
+                        className="w-40 h-40 rounded-full border-4 light:border-5 border-cyan-300 light:border-pink-500 shadow-xl z-40"
+                    />
+                </RevealOnScroll>
+            </div>
 
             <div className="text-center max-w-3xl mx-auto px-4">
                 <RevealOnScroll>

@@ -9,13 +9,6 @@ export const Home = () => {
             className="min-h-screen flex flex-col items-center justify-center relative"
         >
             <RevealOnScroll>
-                {/* <div className="flex flex-col items-center mb-6">
-                    <img
-                        src="./profile-pic.png" // Replace with your image URL
-                        alt="Profile"
-                        className="w-40 h-40 rounded-full border-4 border-white"
-                    />
-                </div> */}
                 <div className="text-center z-10 px-4">
                     <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-cyan-300 to-pink-500 bg-clip-text text-transparent leading-right">Hi, I'm Christian!</h1>
                     <p className="text-gray-400 light:text-gray-500 text-lg mb-8 max-w-lg mx-auto">
