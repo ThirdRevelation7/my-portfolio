@@ -28,7 +28,7 @@ export const About = () => {
                     <img
                         src="./profile-pic.png" // Replace with your image URL
                         alt="Profile"
-                        className="w-40 h-40 rounded-full border-4 light:border-5 border-cyan-300 light:border-pink-500 shadow-xl z-40"
+                        className="w-40 h-40 rounded-full border-4 light:border-5 border-cyan-300 light:border-pink-500 shadow-lg light:shadow-gray-400 z-40"
                     />
                 </RevealOnScroll>
             </div>
