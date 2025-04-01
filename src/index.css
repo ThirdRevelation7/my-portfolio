@@ -40,9 +40,19 @@ html, body {
 .touch-hover-cyan {
 
     background-color: rgba(165, 243, 252, 0.2); /* Matches hover:bg-cyan-200/20 */
-    color: #67e8f9; /* Matches hover:text-cyan-200 */
-    box-shadow: 0 0 15px #67e8f9; /* Matches hover:shadow-[0_0_15px_theme('colors.cyan.200')] */
-    transition: all 0.3s ease-in-out;
+    animation: glowEffect 2.5s ease-in-out infinite;
+}
+
+@keyframes glowEffect {
+  0% {
+    box-shadow: 0 0 5px #02d8f4, 0 0 10px #00bcd4, 0 0 15px #00bcd4;
+  }
+  50% {
+    box-shadow: 0 0 20px #02d8f4, 0 0 30px #00bcd4, 0 0 40px #00bcd4;
+  }
+  100% {
+    box-shadow: 0 0 5px #02d8f4, 0 0 10px #00bcd4, 0 0 15px #00bcd4;
+  }
 }
 
 .touch-hover-pink {
@@ -61,6 +71,26 @@ html, body {
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.my-image {
+  position: relative;
+  animation-name: floating;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+
+}
+
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  } 50% {
+    transform: translate(0, 10px);
+  } 100% {
+    transform: translate(0, -0px);
+  }
 }
 
 @custom-variant light (&:where(.light, .light *));

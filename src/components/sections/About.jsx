@@ -10,6 +10,17 @@ export const About = () => {
         "HTML"
     ];
 
+    // const frontendIcons = {
+    //     css: cssIcon,
+    //     html: htmlIcon,
+    //     js: jsIcon,
+    //     react: reactIcon
+    // };
+
+    const frontendIcons = import.meta.glob('../../assets/Frontend/*.png', { eager: true });
+
+    const backendIcons = import.meta.glob('../../assets/Backend/*.png', { eager: true });
+
     const backendSkills = [
         "Python",
         "Node.js",
@@ -28,7 +39,7 @@ export const About = () => {
                     <img
                         src="./profile-pic.png" // Replace with your image URL
                         alt="Profile"
-                        className="w-40 h-40 rounded-full border-4 light:border-5 border-cyan-300 light:border-pink-500 shadow-lg light:shadow-gray-400 z-40"
+                        className="w-40 h-40 rounded-full border-4 light:border-5 border-cyan-300 light:border-pink-500 shadow-lg light:shadow-gray-400 z-40 my-image"
                     />
                 </RevealOnScroll>
             </div>
@@ -45,22 +56,18 @@ export const About = () => {
                         e.currentTarget.classList.add(
                             "shadow-[0px_0px_5px_2px_theme('color.pink.200'),0px_0px_15px_5px_theme('color.pink.500')]", "light:shadow-xl"
                         );
-                        e.currentTarget.querySelectorAll(".pink-glow").forEach((span) => {
-                            span.classList.add("touch-hover-pink");
-                        });
-                        e.currentTarget.querySelectorAll(".cyan-glow").forEach((span) => {
-                            span.classList.add("touch-hover-cyan");
+
+                        e.currentTarget.querySelectorAll(".cyan-glow").forEach((div) => {
+                            div.classList.add("touch-hover-cyan");
                         });
                     }}
                     onTouchEnd={(e) => {
                         e.currentTarget.classList.remove(
                             "shadow-[0px_0px_5px_2px_theme('color.pink.200'),0px_0px_15px_5px_theme('color.pink.500')]", "light:shadow-xl"
                         );
-                        e.currentTarget.querySelectorAll(".pink-glow").forEach((span) => {
-                            span.classList.remove("touch-hover-pink");
-                        });
-                        e.currentTarget.querySelectorAll(".cyan-glow").forEach((span) => {
-                            span.classList.remove("touch-hover-cyan");
+
+                        e.currentTarget.querySelectorAll(".cyan-glow").forEach((div) => {
+                            div.classList.remove("touch-hover-cyan");
                         });
                     }}
                 >
@@ -74,41 +81,30 @@ export const About = () => {
                             <RevealOnScroll>
                                 <h3 className="text-xl text-gray-200 light:text-gray-500 font-bold mb-4">Frontend</h3>
                             </RevealOnScroll>
-                            <div className="flex flex-wrap gap-2">
-                                {frontendSkills.map((tech, key) => (
 
-                                    <span
-                                        key={key}
-                                        className="bg-cyan-200/10 light:bg-cyan-200/20 hover:bg-cyan-200/20 rounded-full text-gray-200 light:text-gray-500
-                                                   py-1 px-3 text-sm transition hover:shadow-[0_0_15px_theme('colors.cyan.200')] hover:text-cyan-200 hover:light:text-cyan-400 cyan-glow
-                                                   hover:light:shadow-[0_0_15px_theme('colors.cyan.400')]"
-                                    >
-                                        {tech}
+                            <div className="flex space-x-2">
+                                {Object.entries(frontendIcons).map(([key, src]) =>
 
-                                    </span>
+                                    <div key={key} className="items-center justify-center flex w-14 h-14 md:h-16 md:w-16 bg-cyan-200/10 light:bg-cyan-200/20 hover:light:bg-cyan-200/30 hover:bg-cyan-200/20 hover:shadow-[0px_0px_5px_2px_theme('color.cyan.100'),0px_0px_15px_5px_theme('color.cyan.500')] shadow-xl rounded-full cyan-glow">
+                                        <img src={src.default} alt={key} className="w-7 h-7 object-contain md:w-8 md:h-8" />
+                                    </div>
 
-                                ))}
+
+                                )}
                             </div>
+
                         </div>
                         <div className="rounded-xl p-6 hover:-translate-y-1 transition-all duration-300">
                             <RevealOnScroll>
                                 <h3 className="text-xl text-gray-200 light:text-gray-500 font-bold mb-4">Backend</h3>
                             </RevealOnScroll>
-                            <div className="flex flex-wrap gap-2">
-                                {backendSkills.map((tech, key) => (
+                            <div className="flex space-x-2">
+                                {Object.entries(backendIcons).map(([key, src]) =>
+                                    <div key={key} className="items-center justify-center flex w-14 h-14 md:w-16 md:h-16 bg-cyan-200/10 light:bg-cyan-200/20 hover:light:bg-cyan-200/30 hover:bg-cyan-200/20 hover:shadow-[0px_0px_5px_2px_theme('color.cyan.100'),0px_0px_15px_5px_theme('color.cyan.500')] shadow-xl rounded-full cyan-glow">
+                                        <img src={src.default} alt={key} className="w-7 h-7 object-contain md:w-8 md:h-8" />
+                                    </div>
 
-                                    <span
-                                        key={key}
-                                        className="bg-pink-500/10 light:bg-pink-500/20 hover:bg-pink-500/20 rounded-full text-gray-200 light:text-gray-500
-                                                   py-1 px-3 text-sm transition hover:shadow-[0_0_15px_theme('colors.pink.500')] hover:text-pink-500 pink-glow"
-                                    >
-                                        {tech}
-
-                                    </span>
-
-                                ))}
-
-
+                                )}
                             </div>
                         </div>
                     </div>

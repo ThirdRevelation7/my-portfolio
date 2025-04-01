@@ -167,7 +167,7 @@ export const Projects = () => {
                                 <a href="#" className="text-pink-500 hover:text-pink-300">
                                     View Project →
                                 </a>
-                                <img src="./watchi-screenshot.png" alt="movie website" className="max-w-50 min-w-50 max-h-45 min-h-45 rounded-xl mx-2" />
+                                <img src="./watchie-screenshot.png" alt="movie website" className="max-w-50 min-w-50 max-h-45 min-h-45 rounded-xl mx-2" />
                             </div>
                         </div>
                     </div>
