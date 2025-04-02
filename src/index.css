@@ -94,3 +94,21 @@ html, body {
 }
 
 @custom-variant light (&:where(.light, .light *));
+
+@layer utilities {
+  .hover-gradient-effect {
+    @apply relative transition-all duration-400 
+           bg-gradient-to-r from-[#a5d7e8]/40 to-white/0 
+           bg-[length:0%_100%] bg-no-repeat 
+           hover:bg-[length:100%_100%];
+  }
+
+  .touched {
+    @apply bg-[length:100%_100%]
+  }
+
+  .light .hover-gradient-effect,
+  .hover-gradient-effect.light {
+    @apply from-cyan-200 to-pink-300;
+}
+}

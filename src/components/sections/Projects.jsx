@@ -11,20 +11,20 @@ export const Projects = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div
                             className="p-6 rounded-xl border border-white/10 light:border-gray-300 hover:-translate-y-1 hover:border-cyan-200/20 light:shadow-cyan-400 light:shadow-md
-                                hover:shadow-[0px_0px_5px_2px_theme('color.cyan.100'),0px_0px_15px_5px_theme('color.cyan.500')] transition"
+                                hover:shadow-[0px_0px_5px_2px_theme('color.cyan.100'),0px_0px_15px_5px_theme('color.cyan.500')] transition hover-gradient-effect"
                             onTouchStart={(e) =>
                                 e.currentTarget.classList.add(
-                                    "shadow-[0px_0px_5px_2px_theme('color.cyan.100'),0px_0px_15px_5px_theme('color.cyan.400')]", "light:shadow-xl"
+                                    "shadow-[0px_0px_5px_2px_theme('color.cyan.100'),0px_0px_15px_5px_theme('color.cyan.400')]", "light:shadow-xl", "touched"
                                 )
                             }
                             onTouchEnd={(e) =>
                                 e.currentTarget.classList.remove(
-                                    "shadow-[0px_0px_5px_2px_theme('color.cyan.100'),0px_0px_15px_5px_theme('color.cyan.400')]", "light:shadow-xl"
+                                    "shadow-[0px_0px_5px_2px_theme('color.cyan.100'),0px_0px_15px_5px_theme('color.cyan.400')]", "light:shadow-xl", "touched"
                                 )
                             }
                         >
-                            <h3 className="text-xl font-bold mb-2 text-left light:text-gray-500">Business Website</h3>
-                            <p className="text-gray-400 mb-4 text-left">
+                            <h3 className="text-xl font-bold mb-2 text-left light:text-gray-600">Business Website</h3>
+                            <p className="text-gray-400 light:text-gray-500 mb-4 text-left">
                                 First paid website I built completely, including all the way to
                                 domain setup and launch. This had a lot of "first's" for me, including hosting the website as well as dealing with domain setup.
                             </p>
@@ -53,22 +53,22 @@ export const Projects = () => {
                         </div>
                         <div
                             className="p-6 rounded-xl border border-white/10 light:border-gray-300 hover:-translate-y-1 hover:border-pink-200/20 light:shadow-pink-500 light:shadow-md
-                                hover:shadow-[0px_0px_5px_2px_theme('color.pink.200'),0px_0px_15px_5px_theme('color.pink.500')] transition"
+                                hover:shadow-[0px_0px_5px_2px_theme('color.pink.200'),0px_0px_15px_5px_theme('color.pink.500')] transition hover-gradient-effect"
                             onTouchStart={(e) =>
                                 e.currentTarget.classList.add(
-                                    "shadow-[0px_0px_5px_2px_theme('color.pink.200'),0px_0px_15px_5px_theme('color.pink.500')]", "light:shadow-xl"
+                                    "shadow-[0px_0px_5px_2px_theme('color.pink.200'),0px_0px_15px_5px_theme('color.pink.500')]", "light:shadow-xl", "touched"
                                 )
                             }
                             onTouchEnd={(e) =>
                                 e.currentTarget.classList.remove(
-                                    "shadow-[0px_0px_5px_2px_theme('color.pink.200'),0px_0px_15px_5px_theme('color.pink.500')]", "light:shadow-xl"
+                                    "shadow-[0px_0px_5px_2px_theme('color.pink.200'),0px_0px_15px_5px_theme('color.pink.500')]", "light:shadow-xl", "touched"
                                 )
                             }
                         >
-                            <h3 className="mb-2 text-xl font-bold text-left light:text-gray-500">
+                            <h3 className="mb-2 text-xl font-bold text-left light:text-gray-600">
                                 Python/Tkinter Code Search App
                             </h3>
-                            <p className="mb-4 text-gray-400 text-left">
+                            <p className="mb-4 text-gray-400 light:text-gray-500 text-left">
                                 As a Fleet Manager with Mavis Tires, I built this app using Python and Tkinter to help streamline and simplify a very tedious task I deal with daily of seraching through hundreds of codes on physical paper.
                             </p>
                             <div className="flex flex-wrap mb-4 gap-2">
@@ -93,21 +93,21 @@ export const Projects = () => {
                         </div>
                         <div
                             className="p-6 rounded-xl border border-white/10 light:border-gray-300 hover:-translate-y-1 hover:border-cyan-200/20 light:shadow-cyan-400 light:shadow-md
-                                hover:shadow-[0px_0px_5px_2px_theme('color.cyan.100'),0px_0px_15px_5px_theme('color.cyan.400')] transition"
+                                hover:shadow-[0px_0px_5px_2px_theme('color.cyan.100'),0px_0px_15px_5px_theme('color.cyan.400')] transition hover-gradient-effect"
                             onTouchStart={(e) =>
                                 e.currentTarget.classList.add(
-                                    "shadow-[0px_0px_5px_2px_theme('color.cyan.100'),0px_0px_15px_5px_theme('color.cyan.400')]", "light:shadow-xl"
+                                    "shadow-[0px_0px_5px_2px_theme('color.cyan.100'),0px_0px_15px_5px_theme('color.cyan.400')]", "light:shadow-xl", "touched"
                                 )
                             }
                             onTouchEnd={(e) =>
                                 e.currentTarget.classList.remove(
-                                    "shadow-[0px_0px_5px_2px_theme('color.cyan.100'),0px_0px_15px_5px_theme('color.cyan.400')]", "light:shadow-xl"
+                                    "shadow-[0px_0px_5px_2px_theme('color.cyan.100'),0px_0px_15px_5px_theme('color.cyan.400')]", "light:shadow-xl", "touched"
                                 )
                             }
                         >
-                            <h3 className="text-xl font-bold mb-2 text-left light:text-gray-500">Flask/Python/SQL fan website</h3>
-                            <p className="text-gray-400 mb-4 text-left">
-                                First website I ever built, and using Python/Flask/SQLite to do so. Project built in dedication to my favorite gaming platform of all time. (Source Code on my <a href="https://github.com/ThirdRevelation7" className="text-cyan-200 hover:text-cyan-100 underline">GitHub!</a>)
+                            <h3 className="text-xl font-bold mb-2 text-left light:text-gray-600">Flask/Python/SQL fan website</h3>
+                            <p className="text-gray-400 light:text-gray-500 mb-4 text-left">
+                                First website I ever built, and using Python/Flask/SQLite to do so. Project built in dedication to my favorite gaming platform of all time. (Source Code on my <a href="https://github.com/ThirdRevelation7" className="text-cyan-200 hover:text-cyan-100 underline light:text-cyan-300 hover:light:text-cyan-200">GitHub!</a>)
                             </p>
                             <div className="flex flex-wrap gap-2 mb-4">
                                 {["Python", "Flask", "CSS", "SQLite", "SQLAlchemy"].map((tech, key) => (
@@ -132,22 +132,22 @@ export const Projects = () => {
                         </div>
                         <div
                             className="p-6 rounded-xl border border-white/10 light:border-gray-300 hover:-translate-y-1 hover:border-pink-200/20 light:shadow-pink-500 light:shadow-md
-                                hover:shadow-[0px_0px_5px_2px_theme('color.pink.200'),0px_0px_15px_5px_theme('color.pink.500')] transition"
+                                hover:shadow-[0px_0px_5px_2px_theme('color.pink.200'),0px_0px_15px_5px_theme('color.pink.500')] transition hover-gradient-effect"
                             onTouchStart={(e) =>
                                 e.currentTarget.classList.add(
-                                    "shadow-[0px_0px_5px_2px_theme('color.pink.200'),0px_0px_15px_5px_theme('color.pink.500')]", "light:shadow-xl"
+                                    "shadow-[0px_0px_5px_2px_theme('color.pink.200'),0px_0px_15px_5px_theme('color.pink.500')]", "light:shadow-xl", "touched"
                                 )
                             }
                             onTouchEnd={(e) =>
                                 e.currentTarget.classList.remove(
-                                    "shadow-[0px_0px_5px_2px_theme('color.pink.200'),0px_0px_15px_5px_theme('color.pink.500')]", "light:shadow-xl"
+                                    "shadow-[0px_0px_5px_2px_theme('color.pink.200'),0px_0px_15px_5px_theme('color.pink.500')]", "light:shadow-xl", "touched"
                                 )
                             }
                         >
-                            <h3 className="mb-2 text-xl font-bold text-left light:text-gray-500">
+                            <h3 className="mb-2 text-xl font-bold text-left light:text-gray-600">
                                 React Movie App
                             </h3>
-                            <p className="mb-4 text-gray-400 text-left">
+                            <p className="mb-4 text-gray-400 light:text-gray-500 text-left">
                                 First React project I built. Website I named Watchie that allows you to search for any movie using The Movie Database api as well as store your favorites.
                             </p>
                             <div className="flex flex-wrap mb-4 gap-2">
