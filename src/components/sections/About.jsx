@@ -21,14 +21,6 @@ export const About = () => {
 
     const backendIcons = import.meta.glob('../../assets/Backend/*.png', { eager: true });
 
-    const backendSkills = [
-        "Python",
-        "Node.js",
-        "SQL",
-        "Flask",
-        "AWS"
-    ];
-
     return (
         <section
             id="about"

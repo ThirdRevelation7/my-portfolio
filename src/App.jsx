@@ -4,6 +4,7 @@ import { Home } from './components/sections/Home';
 import { About } from './components/sections/About';
 import { Projects } from './components/sections/Projects';
 import { ThemeProvider } from './context/ThemeContext';
+import { Contact } from './components/sections/Contact';
 import DarkModeToggle from './components/DarkModeToggle';
 
 import { useState } from 'react';
@@ -26,6 +27,7 @@ function App() {
           <Home />
           <About />
           <Projects />
+          <Contact />
         </ThemeProvider>
       </div >
     </>
