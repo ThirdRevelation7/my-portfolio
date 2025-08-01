@@ -164,7 +164,7 @@ export const Projects = () => {
                                 ))}
                             </div>
                             <div className="flex justify-between items-center">
-                                <a href="#" className="text-pink-500 hover:text-pink-300">
+                                <a href="https://thirdrevelation7.github.io/react-movie-watchlist" className="text-pink-500 hover:text-pink-300">
                                     View Project →
                                 </a>
                                 <img src="./watchie-screenshot.png" alt="movie website" className="max-w-50 min-w-50 max-h-45 min-h-45 rounded-xl mx-2" />
